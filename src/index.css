@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-:root {
+[data-theme="dark"]{
   --font-base: "DM Sans", sans-serif;
-
+  --primary-color: rgb(33, 43, 65);
+  --secondary-color: #626de7;
+  --black-color: #ffffff;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #151c2b;
+}
+[data-theme="light"]{
+  --background-image:url(./assets/bgIMG.png);
+  --font-base: "DM Sans", sans-serif;
   --primary-color: #edf2f8;
-  /* --primary-color: rgb(210	210	210); */
   --secondary-color: #313bac;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
@@ -13,9 +22,23 @@
   --white-color: #ffffff;
 }
 
+/* :root {
+  --background-image:url(./assets/bgIMG.png);
+
+  --font-base: "DM Sans", sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+} */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  transition:background-color 0.3s ease-in-out ;
 }

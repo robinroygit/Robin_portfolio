@@ -70,7 +70,7 @@
       border-radius: 0.75rem;
     }
 
-    @media screen and (max-width: 300px) {
+    @media screen and (max-width: 450px) {
       width: 100%;
       margin: 1rem;
     }
@@ -108,6 +108,7 @@
   border-radius: 0.5rem;
   opacity: 0;
   transition: background-color 0.3s ease;
+  
 
   div {
     width: 50px;
@@ -128,6 +129,7 @@
       color: var(--white-color);
     }
   }
+  
 }
 
 .app__work-content {

@@ -3,11 +3,13 @@ import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import "./Navbar.scss";
+import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar" id="header" >
+
       <div className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
       </div>
@@ -20,8 +22,11 @@ const Navbar = () => {
             </li>
           )
         )}
+
+
       </ul>
 
+        <DarkMode/>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
@@ -31,6 +36,7 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
+            
             <ul>
               {["home", "about", "contact", "work", "skills",].map(
                 (item,index) => (
@@ -42,9 +48,11 @@ const Navbar = () => {
                 )
               )}
             </ul>
+          
           </motion.div>
         )}
       </div>
+
     </nav>
   );
 };
