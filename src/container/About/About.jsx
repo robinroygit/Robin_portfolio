@@ -3,31 +3,10 @@ import "./About.scss";
 import {motion} from "framer-motion"
 // import images from "../../constants/images"
 import { urlFor, client } from "../../client";
-import AppWrap from "../../wrapper/AppWrap";
+
+import { MotionWrap, AppWrap } from "../../wrapper";
 
 
-// const about = [
-//   {
-//     title: "Web Development",
-//     description: "I am a Good Developer",
-//     imgUrl: images.about01,
-//   },
-//   {
-//     title: "Front-end Development  ",
-//     description: "I am a Good Developer",
-//     imgUrl: images.about02,
-//   },
-//   {
-//     title: "Web Design",
-//     description: "I am a Good Developer",
-//     imgUrl:images.about03,
-//   },
-//   {
-//     title: "UI/UX",
-//     description: "I am a Good Developer",
-//     imgUrl: images.about04,
-//   },
-// ];
 
 const About = () => {
 
@@ -64,4 +43,8 @@ const About = () => {
   );
 };
 
-export default AppWrap(About,"about");
+export default AppWrap(
+ MotionWrap(About, "app__about"),
+  "about",
+  "app__whitebg"
+  );

@@ -27,6 +27,7 @@ import profile from '../assets/profile.png';
 import profile1 from '../assets/profile1.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import html5 from '../assets/html5.png';
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -71,6 +72,7 @@ const images={
   nb,
   skype,
   spotify,
+  html5,
 };
 
 export default images;
