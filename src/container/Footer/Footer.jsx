@@ -51,7 +51,7 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile " />
           <a href="tel:+91397927357" className="p-text">
-            +9123456789
+            +919891244212
           </a>
         </div>
       </div>
@@ -107,4 +107,4 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__whitebg  ");
+export default AppWrap(MotionWrap(Footer, "app__footer"), "contact", "app__primarybg");

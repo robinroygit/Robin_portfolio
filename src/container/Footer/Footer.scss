@@ -22,7 +22,6 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-  
       margin: 1rem 0;
       padding: 1rem;
       border-radius: 10px;
@@ -39,6 +38,7 @@
   
       p {
         font-weight: 500;
+
       }
       a {
         text-decoration: none;
@@ -87,7 +87,7 @@
         padding: 0.95rem;
         border: none;
         border-radius: 7px;
-        background-color: var(--primary-color);
+        background-color: var(--white-color);
   
         font-family: var(--font-base);
         color: var(--secondary-color);
